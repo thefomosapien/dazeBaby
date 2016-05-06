@@ -7,12 +7,6 @@ angular.module('app').config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'homepage/homepage.html',
             controller: 'homepageCtrl'
         })
-        
-        .state('contact', {
-            url: '/contact',
-            templateUrl: 'contact/contact.html',
-            controller: 'contactCtrl'
-        })
 
     $urlRouterProvider.otherwise('/homepage');
 })

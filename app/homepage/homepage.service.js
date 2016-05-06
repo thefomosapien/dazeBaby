@@ -1,16 +1,8 @@
-(function() {
-'use strict';
+angular.module("app").service("homepageService", function() {
 
-    angular
-        .module('Module')
-        .service('Service', Service);
+    var homepage = {
+        name: 'homepage',
+        state: 'homepage'
+    }
 
-    Service.$inject = ['dependency1'];
-    function Service(dependency1) {
-        this.exposedFn = exposedFn;
-        
-        ////////////////
-
-        function exposedFn() { }
-        }
-})();
+});
